@@ -20,7 +20,7 @@ Mac [install](https://formulae.brew.sh/formula/jq)
 
 3. (optional) Install lolcatjs
 
-Mac/Win [intall](https://www.npmjs.com/package/lolcatjs)
+Mac/Win [install](https://www.npmjs.com/package/lolcatjs)
 
 ## Warmups
 
