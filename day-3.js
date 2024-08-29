@@ -45,6 +45,15 @@ getFirstBerryName();
 // Note: use /api/v2/pokemon to GET a pokemon object
 
 // TODO: Write your function here to fetch and log the name of the second Pokémon
+async function getSecondPokemonName() {
+  const url = 'https://pokeapi.co/api/v2/pokemon/2'; // Fetching data for Bulbasaur, the first Pokémon
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log('Second Pokémon Name:', data.name);
+}
+
+// Call the function to fetch and log the name of the first Pokémon
+getSecondPokemonName();
 
 
 // EXERCISE 2: Fetch and Log the Flavor of the First Berry
@@ -56,6 +65,16 @@ getFirstBerryName();
 
 // TODO: Write your function here to fetch and log the flavor of the first Berry
 
+async function getFirstBerryFlavor() {
+  const url = 'https://pokeapi.co/api/v2/berry-flavor/1'; 
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log('First Berry Flavor:', data.name);
+}
+
+// Call the function to fetch and log the name of the first Berry
+getFirstBerryFlavor();
+
 
 // EXERCISE 3: Fetch and Log the Name and Effect of the First Ability
 
@@ -65,7 +84,14 @@ getFirstBerryName();
 // Note: use /api/v2/ability to GET an ability object
 
 // TODO: Write your function here to fetch and log the name and effect of the first Ability
+async function getFirstAbility() {
+  const url = 'https://pokeapi.co/api/v2/ability/1'; 
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log('First Ability:', data.name);
+}
 
+getFirstAbility();
 
 // EXERCISE 4: Fetch and Log the Name and Color of the First Item
 
@@ -75,6 +101,15 @@ getFirstBerryName();
 // Note: use /api/v2/item to GET an item object
 
 // TODO: Write your function here to fetch and log the name and color of the first Item
+async function getFirstItem() {
+  const url = 'https://pokeapi.co/api/v2/item/1/'; 
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log('First Item:', data.name);
+// console.log('First Item Color:' data.name);  could not find color**
+}
+
+getFirstItem();
 
 
 // EXERCISE 5: Fetch and Log the Name of the First Type
@@ -85,6 +120,14 @@ getFirstBerryName();
 // Note: use /api/v2/type to GET a type object
 
 // TODO: Write your function here to fetch and log the name of the first Type
+async function getFirstType() {
+  const url = 'https://pokeapi.co/api/v2/type/1/'; 
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log('First Type:', data.name);
+}
+
+getFirstType();
 
 
 // Summary:

@@ -135,7 +135,7 @@ async function getEeveeData() {
   console.log('Name:', data.name);
   console.log('Weight:', data.weight);
   console.log('Abilities:', data.abilities)
-  // let abilities = [];
+
 
 }
 
