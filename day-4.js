@@ -32,7 +32,7 @@ async function fetchBerryById(berryId) {
   const response = await fetch(url);
   const data = await response.json();
   console.log(`Berry Name: ${data.name}`);
-  console.log(`Flavor: ${data.flavor}`);
+  console.log(`Flavor: ${data.flavors[0].flavor.name}`);
 }
 
 // Fetch and log data for Berry with ID 1
