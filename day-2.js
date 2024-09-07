@@ -132,10 +132,15 @@ async function getEeveeData() {
   const url = 'https://pokeapi.co/api/v2/pokemon/133';
   const response = await fetch(url);
   const data = await response.json();
-  console.log('Name:', data.name);
+  let name = data.name;
+  console.log('Name:', name);
+  let abilities = data.abilities;
+  let abilityNames = "";
+  for(let i=0; i<abilities.length; i++) {
+    abilityNames += abilities[i].ability.name + ",";
+  }
   console.log('Weight:', data.weight);
   console.log('Abilities:', data.abilities)
-
 
 }
 
